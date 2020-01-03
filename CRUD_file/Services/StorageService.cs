@@ -34,7 +34,7 @@ namespace CRUD_file.Data
             bool resultOk = true;
             try
             {               
-                var data = list.Where<T>(whereClause).ToList(); //list.Where<T>(whereClause).ToListAsync();
+                var data = list.Where<T>(whereClause).ToList();
                 if ((data != null) && (data.Any()))
                 {
                     lock (list) list.Remove(data[0]);
@@ -58,7 +58,7 @@ namespace CRUD_file.Data
             bool resultOk = true;
             try
             {
-                var data = list.Where<T>(whereClause).ToList(); //list.Where<T>(whereClause).ToListAsync();
+                var data = list.Where<T>(whereClause).ToList();
                 if ((data != null) && (data.Any()))
                 {
                     lock (list) list.Remove(data[0]);
@@ -79,7 +79,7 @@ namespace CRUD_file.Data
         {
             try
             {
-                var data = list.Where<T>(whereClause).ToList(); //list.Where<T>(whereClause).ToListAsync();
+                var data = list.Where<T>(whereClause).ToList();
                 if ((data != null) && (data.Any()))
                     return data[0];
                 else
